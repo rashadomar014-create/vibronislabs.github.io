@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibronis Labs Ltd</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000000;
+      color: #d0e8ff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .logo {
+      width: 60%;
+      max-width: 420px;
+      margin-bottom: 20px;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      color: #8cb8ff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SVG Logo -->
+  <svg class="logo" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <linearGradient id="mlg" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0" stop-color="#4aa8ff"/>
+        <stop offset="0.5" stop-color="#2f78c9"/>
+        <stop offset="1" stop-color="#0e4f8a"/>
+      </linearGradient>
+      <filter id="drop" x="-50%" y="-50%" width="200%" height="200%">
+        <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+      </filter>
+    </defs>
+    <g filter="url(#drop)">
+      <text x="40" y="105" font-family="Segoe UI, Roboto, Arial" font-size="110"
+            font-weight="700" fill="url(#mlg)">VL</text>
+    </g>
+  </svg>
+
+  <div class="tagline">Vibronis Labs Ltd — Software, Signals, Systems</div>
+
+</body>
+</html>
