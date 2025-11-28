@@ -6,10 +6,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: #000;
+
+  /* Animated gradient background */
+  background: linear-gradient(120deg, #001a2b, #000814, #001a2b);
+  background-size: 300% 300%;
+  animation: bgmove 18s ease infinite;
+
   color: #e0f7ff;
   line-height: 1.6;
 }
+
+@keyframes bgmove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 img {
   max-width: 100%;
