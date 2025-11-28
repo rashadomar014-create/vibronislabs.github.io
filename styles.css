@@ -1,10 +1,23 @@
+/* ---------------------------------------------------
+   GLOBAL STYLES
+--------------------------------------------------- */
+
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
   background: #000;
   color: #e0f7ff;
   line-height: 1.6;
 }
+
+img {
+  max-width: 100%;
+}
+
+/* ---------------------------------------------------
+   NAVIGATION
+--------------------------------------------------- */
 
 .top-nav {
   text-align: center;
@@ -17,27 +30,44 @@ body {
   color: #00aaff;
   font-weight: 600;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .top-nav a:hover {
   text-decoration: underline;
+  color: #77c7ff;
 }
+
+/* ---------------------------------------------------
+   HEADER & LOGO
+--------------------------------------------------- */
 
 header {
   text-align: center;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 20px;
 }
 
 .logo {
   width: 90px;
   height: 90px;
   margin-bottom: 12px;
+  animation: pulse 3s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 .tagline {
   font-size: 1.2rem;
   opacity: 0.9;
 }
+
+/* ---------------------------------------------------
+   MAIN CONTENT SECTIONS
+--------------------------------------------------- */
 
 .content-section {
   max-width: 800px;
@@ -46,27 +76,59 @@ header {
   text-align: center;
 }
 
+h1, h2, h3 {
+  color: #4db8ff;
+}
+
+/* ---------------------------------------------------
+   LINKS
+--------------------------------------------------- */
+
+a {
+  color: #4db8ff;
+}
+
+a:hover {
+  color: #77c7ff;
+}
+
+/* ---------------------------------------------------
+   FOOTER
+--------------------------------------------------- */
+
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 28px 0;
+  background: #000;
+  margin-top: 60px;
   color: #88c2d8;
-  font-size: 0.9rem;
-  margin-top: 40px;
-  opacity: 0.85;
 }
 
-footer a {
-  color: #00aaff;
+footer .footer-links a {
+  color: #4db8ff;
   text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
+  margin: 0 8px;
+  transition: color 0.3s ease;
 }
 
-.email-link {
-  color: #00aaff;
-  text-decoration: none;
-}
-.email-link:hover {
+footer .footer-links a:hover {
   text-decoration: underline;
+  color: #77c7ff;
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+footer .social-links {
+  margin-top: 14px;
+}
+
+footer .social-links a svg {
+  transition: transform 0.3s ease, stroke 0.3s ease;
+}
+
+footer .social-links a svg:hover {
+  transform: scale(1.15);
+  stroke: #77c7ff;
 }
