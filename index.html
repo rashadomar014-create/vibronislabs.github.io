@@ -1,57 +1,147 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vibronis Labs Ltd</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibronis Labs</title>
+
+  <!-- Favicon (upload a file named favicon.ico to your repo root) -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="styles.css" />
+
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: #000000;
-      color: #d0e8ff;
       font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      background: #000;
+      color: #e0f7ff;
+      line-height: 1.6;
+    }
+
+    .top-nav {
       text-align: center;
+      padding: 15px;
+      background: #000;
     }
+
+    .top-nav a {
+      margin: 0 12px;
+      color: #00aaff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 10px 20px;
+    }
+
     .logo {
-      width: 60%;
-      max-width: 420px;
-      margin-bottom: 20px;
+      width: 90px;
+      height: 90px;
+      margin-bottom: 12px;
     }
+
     .tagline {
       font-size: 1.2rem;
-      color: #8cb8ff;
+      opacity: 0.9;
+    }
+
+    .content-section {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #88c2d8;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      opacity: 0.85;
+    }
+
+    footer a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
 
-  <!-- SVG Logo -->
-  <svg class="logo" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid meet">
-    <defs>
-      <linearGradient id="mlg" x1="0" x2="0" y1="0" y2="1">
-        <stop offset="0" stop-color="#4aa8ff"/>
-        <stop offset="0.5" stop-color="#2f78c9"/>
-        <stop offset="1" stop-color="#0e4f8a"/>
-      </linearGradient>
-      <filter id="drop" x="-50%" y="-50%" width="200%" height="200%">
-        <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
-      </filter>
-    </defs>
-    <g filter="url(#drop)">
-      <text x="40" y="105" font-family="Segoe UI, Roboto, Arial" font-size="110"
-            font-weight="700" fill="url(#mlg)">VL</text>
-    </g>
-  </svg>
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </nav>
 
-  <div class="tagline">Vibronis Labs Ltd — Software, Signals, Systems</div>
+  <!-- Logo + Header -->
+  <header>
+    <!-- Simple inline SVG logo using metallic blue tones -->
+    <svg class="logo" viewBox="0 0 200 200">
+      <defs>
+        <linearGradient id="vgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#00c0ff"/>
+          <stop offset="100%" stop-color="#0077b6"/>
+        </linearGradient>
+      </defs>
+      <text x="50%" y="55%" text-anchor="middle" font-size="95" font-family="Arial" fill="url(#vgrad)">
+        VL
+      </text>
+    </svg>
+
+    <h1>Vibronis Labs</h1>
+    <p class="tagline">AI-driven tools for clarity, confidence, and modern work.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="content-section">
+      <h2>Our Mission</h2>
+      <p>
+        Vibronis Labs develops modern mobile applications for Android and iOS, 
+        starting with utility and lifestyle tools and expanding into interactive entertainment. 
+        The studio focuses on clean design, dependable engineering, and experimental ideas.
+      </p>
+    </section>
+
+    <section class="content-section">
+      <h2>Upcoming Product</h2>
+      <p>
+        Our debut release is an AI-assisted job interview coach.
+        It analyses job descriptions, generates realistic interview scenarios,
+        and provides structured feedback to improve clarity, confidence, and communication.
+      </p>
+      <p>
+        A public release is planned for 2025.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© Vibronis Labs — Establishing operations in 2025.</p>
+    <p>Company registration in progress.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms & Conditions</a>
+    </p>
+  </footer>
 
 </body>
 </html>
